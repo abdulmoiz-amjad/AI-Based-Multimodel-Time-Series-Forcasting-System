@@ -75,8 +75,8 @@ The project integrates:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Data-Mining-Project.git
-cd Data-Mining-Project
+git clone <your_git link> 
+cd <project_name>
 ```
 
 ### 2️⃣ Set Up the Backend (Flask)
