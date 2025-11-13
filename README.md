@@ -19,7 +19,7 @@ The project integrates:
 * Designed **frontend components (App.js)** for displaying forecasts interactively.
 * Implemented a **future forecasting workaround** for models with only `predict()` (no `forecast()`). This method used the last observed data to initialize a future data array, which was then passed into the model’s prediction function.
 
-### 🟠 Ahsan Waseem
+### 🟠 Abdulmoiz
 
 * Focused on **data preprocessing and normalization**.
 * Tested different data transformation strategies:
