@@ -14,7 +14,7 @@ CORS(app)
 @app.route('/plot')
 def serve_plot():
 
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     cursor.execute("SELECT serialized_df1 FROM data_plot5 ORDER BY id DESC LIMIT 1")
@@ -46,7 +46,7 @@ def serve_plot():
 @app.route('/stationary_plot')
 def stationary_plot():
 
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     cursor.execute("SELECT serialized_df2 FROM data_plot5 ORDER BY id DESC LIMIT 1")
@@ -77,7 +77,7 @@ def stationary_plot():
 @app.route('/arima_plot')
 def arima_plot():
 
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     cursor.execute("SELECT train_data, test_data, arima_residuals, forecast_values, rmse FROM arima_ploted ORDER BY id DESC LIMIT 1")
@@ -129,7 +129,7 @@ def arima_plot():
 @app.route('/arima_forecast')
 def arima_forecast():
 
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     cursor.execute(
@@ -171,7 +171,7 @@ def arima_forecast():
 @app.route('/ann_plot')
 def ann_plot():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Step 2: Execute a query to retrieve the necessary data from the table
@@ -229,7 +229,7 @@ def ann_plot():
 @app.route('/ann_forecast')
 def ann_forecast():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Step 2: Execute a query to retrieve the necessary data from the table
@@ -271,7 +271,7 @@ def ann_forecast():
 @app.route('/sarima_plot')
 def sarima_plot():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Step 2: Execute a query to retrieve the necessary data from the table
@@ -333,7 +333,7 @@ def sarima_plot():
 @app.route('/sarima_forecast')
 def sarima_forecast():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Step 2: Execute a query to retrieve the necessary data from the table
@@ -381,7 +381,7 @@ def sarima_forecast():
 @app.route('/ets_plot')
 def ets_plot():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Step 2: Execute a query to retrieve the necessary data from the table
@@ -442,7 +442,7 @@ def ets_plot():
 @app.route('/ets_forecast')
 def ets_forecast():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Step 2: Execute a query to retrieve the necessary data from the table
@@ -492,7 +492,7 @@ def ets_forecast():
 @app.route('/svr_plot')
 def svr_plot():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Execute a query to retrieve the stored data
@@ -552,7 +552,7 @@ def svr_plot():
 @app.route('/svr_forecast')
 def svr_forecast():
     # Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Execute a query to retrieve the stored data
@@ -595,7 +595,7 @@ def svr_forecast():
 @app.route('/prophet_plot')
 def prophet_plot():
 
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM Prophet_data ORDER BY id DESC LIMIT 1")
@@ -649,7 +649,7 @@ def prophet_plot():
 @app.route('/prophet_forecast')
 def prophet_forecast():
     # Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Retrieve the data from the table
@@ -688,7 +688,7 @@ def prophet_forecast():
 @app.route('/lstm_plot')
 def lstm_plot():
     # Step 1: Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Execute a query to retrieve the stored data
@@ -747,7 +747,7 @@ def lstm_plot():
 @app.route('/lstm_forecast')
 def lstm_forecast():
     # Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Execute a query to retrieve the stored data
@@ -791,7 +791,7 @@ def lstm_forecast():
 @app.route('/hybrid_plot')
 def hybrid_plot():
     # Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Retrieve the data from the table
@@ -845,7 +845,7 @@ def hybrid_plot():
 @app.route('/hybrid_forecast')
 def hybrid_forecast():
     # Connect to SQLite database
-    conn = sqlite3.connect(r"C:\Users\wasif\DM_Project_Saved.db")
+    conn = sqlite3.connect(r"C:\Users\moiz\DM_Project_Saved.db")
     cursor = conn.cursor()
 
     # Retrieve the data from the table
@@ -881,3 +881,4 @@ def hybrid_forecast():
 
 if __name__ == '__main__':
     app.run(debug=True, port=4000)
+
